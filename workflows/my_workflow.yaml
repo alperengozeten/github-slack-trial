@@ -7,11 +7,6 @@ jobs:
     name: My Job
     runs-on: windows-latest
     steps:
-      - name: Print a greeting
-        env:
-          MY_VAR: Hi there! My name is
-          FIRST_NAME: Halil
-          MIDDLE_NAME: Alperen
-          LAST_NAME: Gozeten
-        run: |
-          echo $MY_VAR $FIRST_NAME $MIDDLE_NAME $LAST_NAME.
+      - name: Display the path
+          run: echo %PATH%
+          shell: cmd
