@@ -16,7 +16,7 @@ jobs:
         id: notify
         with:
           slack-bot-user-oauth-access-token: ${{ secrets.SLACK_MIGRATION_BOT_USER_OAUTH_ACCESS_TOKEN }}
-          slack-channel: C029YV7T0G0
+          slack-channel: C02B35HJK4M
           slack-text: |
             <!here> Hello! Event "${{ github.event_name }}" in "${{ github.repository }}" by "${{ github.actor }}" 🤓
             URL: https://github.com/mdcollab/mdcollab/pull/${{ github.event.number }}
