@@ -18,7 +18,7 @@ jobs:
           slack-bot-user-oauth-access-token: ${{ secrets.SLACK_BOT_USER_OAUTH_ACCESS_TOKEN }}
           slack-channel: C029YV7T0G0
           slack-text: |
-            @channel
+            <@channel>
             Hello! Event "${{ github.event_name }}" in "${{ github.repository }}" by "${{ github.actor }}" 🤓
             Ref: "${{ github.ref }}"
             Path: "${{ github.action_path }}"
