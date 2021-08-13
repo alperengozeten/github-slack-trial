@@ -1,6 +1,9 @@
 name: My Workflow
 
-on: [push, pull_request]
+on:
+  push:
+    paths:
+      - 'src/main/java/test/**'
 
 jobs:
   slack-notifications:
