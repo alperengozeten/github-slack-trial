@@ -1,9 +1,6 @@
 name: My Workflow
 
-on:
-  push:
-    paths:
-      -'src/main/**'
+on: [push, pull_request]
 
 jobs:
   slack-notifications:
