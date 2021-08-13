@@ -18,9 +18,7 @@ jobs:
           slack-bot-user-oauth-access-token: ${{ secrets.SLACK_BOT_USER_OAUTH_ACCESS_TOKEN }}
           slack-channel: C029YV7T0G0
           slack-text: |
-            [<!here>] Hello! Event "${{ github.event_name }}" in "${{ github.repository }}" by "${{ github.actor }}" 🤓
-            URL: https://github.com/alperengozeten/github-slack-trial/pull/${{ github.event.number }}
-            Ref: "${{ github.ref }}"
+            <!here> Hello! Event "${{ github.event_name }}" in "${{ github.repository }}" by "${{ github.actor }}" 🤓
             ${{ github.event.repo.url }}
       - name: Result from "Send Message"
         run: echo "The result was ${{ steps.notify.outputs.slack-result }}"
