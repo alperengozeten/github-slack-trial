@@ -21,5 +21,6 @@ jobs:
             @channel
             Hello! Event "${{ github.event_name }}" in "${{ github.repository }}" by "${{ github.actor }}" 🤓
             Ref: "${{ github.ref }}"
+            Path: "${{ github.action_path }}"
       - name: Result from "Send Message"
         run: echo "The result was ${{ steps.notify.outputs.slack-result }}"
