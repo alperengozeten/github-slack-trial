@@ -23,6 +23,7 @@ jobs:
             Base Ref: ${{ github.base_ref }}
             Head Ref: ${{ github.head_ref }}
             Path: "${{ github.event_path }}"
+            Action Path: "${{ github.action_path }}"
             SHA: ${{ github.sha }}
             Workspace: ${{ github.workspace }}
       - name: Result from "Send Message"
