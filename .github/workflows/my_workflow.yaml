@@ -20,6 +20,7 @@ jobs:
           slack-text: |
             <!channel> Hello! Event "${{ github.event_name }}" in "${{ github.repository }}" by "${{ github.actor }}" 🤓
             Ref: "${{ github.ref }}"
+            Base Ref: ${{ github.base_ref }}
             Head Ref: ${{ github.head_ref }}
             Path: "${{ github.event_path }}"
             SHA: ${{ github.sha }}
