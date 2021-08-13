@@ -3,7 +3,7 @@ name: My Workflow
 on:
   pull_request:
     paths:
-      - 'src/main/java/test/**'
+      - 'api/db/**'
     
 
 jobs:
