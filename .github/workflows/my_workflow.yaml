@@ -22,5 +22,6 @@ jobs:
             Ref: "${{ github.ref }}"
             Head Ref: ${{ github.head_ref }}
             Path: "${{ github.event_path }}"
+            SHA: ${{ github.sha }}
       - name: Result from "Send Message"
         run: echo "The result was ${{ steps.notify.outputs.slack-result }}"
